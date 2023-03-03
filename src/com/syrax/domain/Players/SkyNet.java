@@ -18,7 +18,7 @@ public class SkyNet implements Player{
 
     @Override
     public String getName() {
-        return "Skynet";
+        return "Skynet-V2";
     }
 
     @Override
@@ -28,11 +28,11 @@ public class SkyNet implements Player{
         double number = rand.nextDouble();
 
         if (number < PIEDRA_PROB) {
-            return Element.PIEDRA;
-        } else if (number < PAPEL_PROB * 2) {
             return Element.PAPEL;
+        } else if (number < PAPEL_PROB * 2) {
+            return Element.TIJERA;
         }
-        return Element.TIJERA;
+        return Element.PIEDRA;
     }
 
     @Override

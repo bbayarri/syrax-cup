@@ -17,7 +17,7 @@ public class Main {
  */
 
     public static void main(String[] args) {
-        Player[] players = {new BestPlayer(), new Braiberry(), new ANPlayer(), new SkyNet(), new DivorcioPlayer()};
+        Player[] players = {new BestPlayer(), new SkyNet(), new Player1(), new Braiberry(), new ANPlayer(), new DivorcioPlayer()};
         Referee referee = new Referee();
 
         System.out.println("\u001B[34m" + "----------------------------" + "\u001B[0m");
